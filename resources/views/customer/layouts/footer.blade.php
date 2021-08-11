@@ -21,9 +21,9 @@
                                 <!-- Footer Title -->
                                 <h4 class="footer-title">Bantuan</h4>
                                 <ul>
-                                    <li><a href="#">Cara Belanja</a></li>
-                                    <li><a href="#">Pengiriman</a></li>
-                                    <li><a href="#">Pembayaran</a></li>
+                                     <li><a href="{{route('ui.tentang')}}">Cara Belanja</a></li>
+                                    <li><a href="{{route('ui.tentang')}}">Pengiriman</a></li>
+                                    <li><a href="{{route('ui.tentang')}}">Pembayaran</a></li>
                                 </ul>
                             </div>
                         </div>
