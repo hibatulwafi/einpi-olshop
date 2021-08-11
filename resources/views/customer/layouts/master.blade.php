@@ -64,7 +64,6 @@
                         Search <i class="far fa-times-circle icon-close"></i>
                     </div>
                     <div class="modal-body">
-                        <form class="row">
                             <div class="col-12 align-self-center">
                                 <div class="row">
                                     <div class="col-12 pb-3">
@@ -72,18 +71,20 @@
                                         <p>Silahkan masukan kata kunci *<i>E.G Hoodie.</i></p>
                                     </div>
                                 </div>
+                            <form action="{{route('ui.product')}}" method="GET" >
+                            @csrf
                                 <div class="row">
                                     <div class="col-12 input-group mt-4">
-                                        <input type="text" placeholder="Masukan Kata Kunci">
+                                        <input type="text" name="search" placeholder="Masukan Kata Kunci">
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-12 input-group align-self-center">
-                                        <button class="btn btn-bordered-white mt-3" style="color:black;">Cari</button>
+                                        <button type="submit" class="btn btn-bordered-white mt-3" style="color:black;">Cari</button>
                                     </div>
                                 </div>
+                            </form>
                             </div>
-                        </form>
                     </div>
                 </div>
             </div>
